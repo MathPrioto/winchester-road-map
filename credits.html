@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Credits — Winchester Road Map</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>body{display:block;overflow:auto}main{max-width:760px;margin:0 auto;padding:16px}a{color:#e67e22}li{margin-bottom:6px;font-size:.9rem}</style>
+</head>
+<body>
+  <header><h1>Credits</h1><a href="index.html">&larr; Back to the map</a></header>
+  <main>
+    <h2>Disclaimer</h2>
+    <p>This is an unofficial fan project. It is not affiliated with, endorsed by or sponsored by Warner Bros. or the creators of the series. All trademarks and copyrights belong to their respective owners. No images, logos or footage from the series are used; photos show real places and are illustrative. Episode summaries are written originally for this site. If you are a rights holder and want something removed, please open an issue in the project repository.</p>
+    <h2>Map and code</h2>
+    <ul>
+      <li>Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></li>
+      <li>Map library: <a href="https://leafletjs.com">Leaflet</a></li>
+      <li>Episode settings checked against the Wikipedia article on <a href="https://en.wikipedia.org/wiki/Supernatural_season_1">Supernatural season 1</a>. Locations of fictional towns are approximate.</li>
+    </ul>
+    <h2>Photos (Wikimedia Commons)</h2>
+    <p>Photos were resized. Each links to its original page with full license details.</p>
+    <ul id="photos"></ul>
+  </main>
+  <script>
+    function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+    fetch('data/episodes.json').then(r=>r.json()).then(d=>{
+      document.getElementById('photos').innerHTML = d.filter(e=>e.image).map(e=>{
+        const i=e.image;
+        return `<li>${esc(e.city)}${e.state?', '+esc(e.state):''} (S${String(e.season).padStart(2,'0')}E${String(e.episode).padStart(2,'0')}${i.illustrative?', illustrative':''}): <a href="${esc(i.source)}">${esc(i.title)}</a> by ${esc(i.author)}, ${esc(i.license)}</li>`;
+      }).join('');
+    });
+  </script>
+</body>
+</html>
