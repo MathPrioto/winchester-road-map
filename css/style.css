@@ -153,3 +153,38 @@ body.page{display:block;height:auto;min-height:100dvh}
   .route{animation:none}
   *{transition:none!important}
 }
+
+/* ---------- numbered pins ---------- */
+.pin-wrap{background:none;border:0}
+.num-pin{
+  width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:var(--accent);color:var(--accent-ink);border:2px solid var(--bg);
+  font:700 .78rem/1 system-ui,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.6);
+  transition:transform .15s,box-shadow .15s;cursor:pointer;
+}
+.num-pin.approx{background:var(--surface-2);color:var(--accent);border:2px dashed var(--accent)}
+.num-pin.sel{transform:scale(1.3);box-shadow:0 0 0 4px rgba(232,150,58,.45),0 2px 8px rgba(0,0,0,.7)}
+.ep .code{min-width:28px;text-align:center;font-size:.8rem}
+
+/* ---------- player & car ---------- */
+.leaflet-bottom.leaflet-left{margin-bottom:6px}
+.player{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 10px;margin:0 0 6px 10px;
+  background:rgba(29,25,22,.94);border:1px solid var(--border);border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,.5);
+}
+.player[hidden]{display:none}
+.player button{
+  min-height:40px;padding:0 14px;border-radius:8px;border:1px solid var(--border);
+  background:var(--surface-2);color:var(--text);font:inherit;font-size:.875rem;cursor:pointer;
+}
+.player #play{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700;min-width:104px}
+.player #restart{padding:0 12px;font-size:1.1rem}
+.player select{min-height:40px}
+.player .hud{font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.car-wrap{background:none;border:0;pointer-events:none}
+.car{--dir:1;transform:scaleX(var(--dir));filter:drop-shadow(0 2px 3px rgba(0,0,0,.8))}
+@media (max-width:820px){
+  .player{padding:6px 8px;gap:6px;margin-left:6px}
+  .player .hud{flex-basis:100%}
+}
