@@ -15,7 +15,7 @@ let selectedId = null;
 const $ = id => document.getElementById(id);
 const esc = s => { const d = document.createElement('div'); d.textContent = s ?? ''; return d.innerHTML; };
 const code = e => `S${String(e.season).padStart(2,'0')}E${String(e.episode).padStart(2,'0')}`;
-const isMapped = e => e.confidence !== 'low' && e.confidence !== 'unknown';
+const isMapped = e => e.lat != null && (e.showOnMap || (e.confidence !== 'low' && e.confidence !== 'unknown'));
 const place = e => e.city ? `${e.city}${e.state ? ', ' + e.state : ''}` : 'Location unknown';
 const kind = e => e.locationType === 'real' ? '' : e.locationType;
 
@@ -32,7 +32,7 @@ function card(e) {
     <h3>${esc(e.title)}</h3>
     <div class="place">${esc(place(e))}</div>
     <p>${esc(e.summary)}</p>
-    ${notes ? `<div class="note">${esc(notes)}</div>` : ''}${credit}</div></div>`;
+    ${notes ? `<div class="note">${esc(notes)}</div>` : ''}${e.showOnMap && e.note ? `<div class="note">${esc(e.note)}</div>` : ''}${credit}</div></div>`;
 }
 
 // ---------- markers ----------
@@ -189,7 +189,7 @@ function render(season) {
   $('episode-list').innerHTML = list.map((e, i) => `<li><button class="ep" data-id="${e.id}" aria-current="false">
       <span class="code">${i + 1}</span>
       <span class="name">${esc(e.title)}</span>
-      <span class="place">${code(e)} · ${esc(place(e))}${kind(e) ? `<span class="badge">${esc(kind(e))}</span>` : ''}</span>
+      <span class="place">${code(e)} · ${esc(place(e))}${e.showOnMap ? '<span class="badge">uncertain</span>' : kind(e) ? `<span class="badge">${esc(kind(e))}</span>` : ''}</span>
     </button></li>`).join('');
 
   if (list.length > 1)
