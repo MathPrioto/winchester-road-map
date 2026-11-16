@@ -209,12 +209,19 @@ function render(season) {
 
 function renderInfo(list) {
   $('info-count').textContent = list.length ? `(${list.length})` : '';
+  const seasons = [...new Set(list.map(e => e.season))].sort((x, y) => x - y);
   $('view-info').innerHTML = `<div class="info-wrap">
     <h2>Unconfirmed locations</h2>
     <p class="lead">These episodes are not on the map because their location could not be confirmed. Shown for information only.</p>
-    ${list.map(e => `<article class="info-card"><h3>${esc(e.title)}</h3>
-      <div class="meta">${code(e)} · ${esc(place(e))}</div>
-      <p>${esc(e.summary)}</p>${e.note ? `<p class="note">${esc(e.note)}</p>` : ''}</article>`).join('')}</div>`;
+    ${seasons.map((n, i) => {
+      const eps = list.filter(e => e.season === n);
+      return `<details class="season-group"${i === 0 ? ' open' : ''}>
+        <summary><span>Season ${n}</span><span class="count-pill">${eps.length}</span></summary>
+        ${eps.map(e => `<article class="info-card"><h3>${esc(e.title)}</h3>
+          <div class="meta">${code(e)} · ${esc(place(e))}</div>
+          <p>${esc(e.summary)}</p>${e.note ? `<p class="note">${esc(e.note)}</p>` : ''}</article>`).join('')}
+      </details>`;
+    }).join('')}</div>`;
 }
 
 function showTab(name) {
