@@ -56,7 +56,7 @@ function select(id, {fly = false} = {}) {
     $('detail').innerHTML = `<button class="close" aria-label="Close details">&times;</button>${card(e)}`;
     $('panel').scrollTop = 0;
   } else {
-    if (fly) m.openPopup();
+    if (fly) setTimeout(() => { if (selectedId === id) m.openPopup(); }, reduceMotion ? 0 : 900);
     const li = document.querySelector(`.ep[data-id="${id}"]`);
     if (li) li.scrollIntoView({block: 'nearest'});
   }
