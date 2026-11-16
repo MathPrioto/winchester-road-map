@@ -2,25 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Winchester Road Map — Unofficial Fan Project</title>
+  <meta name="description" content="An interactive map of the places the Winchester brothers visited, episode by episode. Unofficial fan project.">
+  <meta name="theme-color" content="#14110f">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Winchester Road Map</h1>
-    <nav>
-      <button id="tab-map" class="active">Map</button>
-      <button id="tab-info">Unconfirmed locations</button>
-    </nav>
-    <label id="season-label">Season
-      <select id="season-filter"><option value="all">All</option></select>
-    </label>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <h1>Winchester Road Map</h1>
+      <p>Unofficial fan project</p>
+    </div>
+    <div class="controls">
+      <div class="tabs" role="tablist" aria-label="Views">
+        <button id="tab-map" role="tab" aria-selected="true" aria-controls="view-map">Map</button>
+        <button id="tab-info" role="tab" aria-selected="false" aria-controls="view-info" tabindex="-1">Unconfirmed <span id="info-count" class="count"></span></button>
+      </div>
+      <label class="season" id="season-label">
+        <span>Season</span>
+        <select id="season-filter" aria-label="Filter by season"><option value="all">All</option></select>
+      </label>
+    </div>
   </header>
-  <div id="map"></div>
-  <section id="info" hidden></section>
-  <footer>Unofficial fan project. Not affiliated with or endorsed by Warner Bros. Dashed markers = fictional/approximate locations. <a href="credits.html" style="color:#e67e22">Credits</a></footer>
+
+  <main id="main">
+    <section id="view-map" class="layout" role="tabpanel" aria-labelledby="tab-map">
+      <aside id="panel" aria-label="Episode list">
+        <div class="panel-head">
+          <h2 id="panel-title">Episodes</h2>
+          <span id="panel-count" class="muted"></span>
+        </div>
+        <div id="detail" class="detail" aria-live="polite"></div>
+        <ol id="episode-list"></ol>
+        <div class="legend" aria-label="Map legend">
+          <span><i class="dot real"></i> Real location</span>
+          <span><i class="dot approx"></i> Approximate / fictional</span>
+          <span><i class="line"></i> Route in episode order</span>
+        </div>
+      </aside>
+      <div id="map" role="region" aria-label="Interactive map"></div>
+    </section>
+
+    <section id="view-info" role="tabpanel" aria-labelledby="tab-info" hidden></section>
+  </main>
+
+  <footer>
+    Not affiliated with or endorsed by Warner Bros. The route connects episode locations in order; it is not the exact path travelled.
+    <a href="credits.html">Credits</a>
+  </footer>
+
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="js/app.js"></script>
 </body>
