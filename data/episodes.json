@@ -73,7 +73,7 @@
   "lng": null,
   "locationType": "unknown",
   "confidence": "unknown",
-  "note": "A commercial plane crash and a possessed passenger; no city, state or airport is named in the sources checked.",
+  "note": "The wiki lists Pittsburgh, Pennsylvania, Nazareth, Pennsylvania and Indianapolis, without saying which is which. Source: Supernatural Wiki, not confirmed on screen.",
   "summary": "The brothers investigate a plane crash and follow a demon from flight to flight.",
   "image": null
  },
@@ -229,15 +229,22 @@
   "season": 1,
   "episode": 12,
   "title": "Faith",
-  "city": "Nebraska (town not stated)",
-  "state": null,
-  "lat": 41.5,
-  "lng": -99.8,
+  "city": "Ford City",
+  "state": "NE",
+  "lat": 41.0,
+  "lng": -98.5,
   "locationType": "approximate",
-  "confidence": "low",
+  "confidence": "medium",
   "summary": "Sam takes a gravely hurt Dean to a tent-revival healer who may be the real thing.",
-  "image": null,
-  "note": "Only the state (Nebraska) is mentioned, in a single recap. The town is not named in the sources checked."
+  "image": {
+   "src": "img/s01e12.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Nebraska_Farmlands_(52472054401).jpg",
+   "author": "Tony Webster",
+   "license": "CC BY 2.0",
+   "title": "Nebraska Farmlands (52472054401).jpg",
+   "illustrative": true
+  },
+  "note": "The town appears in a newspaper clipping and is probably fictional; the point shown is approximate. Source: Supernatural Wiki location field; not confirmed on screen."
  },
  {
   "id": "s01e13",
@@ -378,7 +385,7 @@
   "confidence": "low",
   "summary": "A cursed painting haunts a family.",
   "image": null,
-  "note": "Sources only say 'upstate New York'. No town was found."
+  "note": "The wiki lists New Paltz and Beacon, New York, without saying which is the main setting. Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s01e20",
@@ -520,7 +527,7 @@
   "confidence": "unknown",
   "summary": "Dean notices dead plants at a grave while the brothers look into a young woman who has been brought back.",
   "image": null,
-  "note": "No place is named in the sources checked."
+  "note": "The wiki gives Greenville, Illinois, based on a cemetery name; not confirmed. Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s02e05",
@@ -598,7 +605,7 @@
   "confidence": "unknown",
   "summary": "A suspicious suicide leads the brothers to a man who made a deal with a demon.",
   "image": null,
-  "note": "No town is named in the sources checked."
+  "note": "The wiki gives Greenwood, Mississippi, but it is unclear whether that is the present-day setting or only the 1938 flashback. Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s02e09",
@@ -762,7 +769,7 @@
   "confidence": "unknown",
   "summary": "A woman keeps reliving a fatal crash while a ghost kills drivers on the anniversary of his death.",
   "image": null,
-  "note": "No place is named in the sources checked."
+  "note": "The wiki gives 'Highway 41, Nevada'; no town is named. Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s02e17",
@@ -811,15 +818,22 @@
   "season": 2,
   "episode": 19,
   "title": "Folsom Prison Blues",
-  "city": "Arkansas (city not stated)",
-  "state": null,
-  "lat": 34.9,
-  "lng": -92.4,
-  "locationType": "approximate",
-  "confidence": "low",
+  "city": "Little Rock",
+  "state": "AR",
+  "lat": 34.7465,
+  "lng": -92.2896,
+  "locationType": "real",
+  "confidence": "medium",
   "summary": "The brothers get themselves arrested to investigate deaths in a reopened prison cell block.",
-  "image": null,
-  "note": "Only the state (Arkansas) is stated; no city or prison is named."
+  "image": {
+   "src": "img/s02e19.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Downtown_Little_Rock.jpg",
+   "author": "Cliff from I now live in Arlington, VA (Outside Washington DC), USA",
+   "license": "CC BY 2.0",
+   "title": "Downtown Little Rock.jpg",
+   "illustrative": false
+  },
+  "note": "The prison is fictional; the city comes from the wiki. Source: Supernatural Wiki location field; not confirmed on screen."
  },
  {
   "id": "s02e20",
@@ -834,7 +848,7 @@
   "confidence": "unknown",
   "summary": "Dean wakes in a seemingly perfect alternate life that conflicts with what he remembers.",
   "image": null,
-  "note": "No place is named in the sources checked."
+  "note": "The wiki lists Joliet, Illinois (the real-world hunt) and Lawrence, Kansas (the alternate life). Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s02e21",
@@ -871,7 +885,7 @@
   "confidence": "low",
   "summary": "The brothers follow a map to a final confrontation with the demon behind their family's troubles.",
   "image": null,
-  "note": "Only the state (Wyoming) is stated; the town is not named."
+  "note": "The wiki places the climax in southern Wyoming; no town is named. Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s03e01",
@@ -886,7 +900,7 @@
   "confidence": "low",
   "summary": "Hunters investigate manifestations of the seven deadly sins, and the brothers meet fellow hunters.",
   "image": null,
-  "note": "Only the state (Nebraska) is stated; no town is named."
+  "note": "Sources disagree: one gives Nebraska, the wiki lists Oak Park, Illinois, and Lincoln, Nebraska. Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s03e02",
@@ -914,15 +928,22 @@
   "season": 3,
   "episode": 3,
   "title": "Bad Day at Black Rock",
-  "city": "Location unknown",
-  "state": null,
-  "lat": null,
-  "lng": null,
-  "locationType": "unknown",
-  "confidence": "unknown",
+  "city": "Black Rock (Buffalo)",
+  "state": "NY",
+  "lat": 42.933,
+  "lng": -78.89,
+  "locationType": "real",
+  "confidence": "medium",
   "summary": "A cursed object brings extreme luck to its holder, and the brothers chase it while Sam is in danger.",
-  "image": null,
-  "note": "The sources only mention Queens, New York, as the location of Bela's flat, not the case itself."
+  "image": {
+   "src": "img/s03e03.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Black_rock_neighborhood.jpg",
+   "author": "Paranormal Skeptic",
+   "license": "CC BY-SA 3.0",
+   "title": "Black rock neighborhood.jpg",
+   "illustrative": false
+  },
+  "note": "Queens, New York, is where Bela's flat is. Source: Supernatural Wiki location field; not confirmed on screen."
  },
  {
   "id": "s03e04",
@@ -1102,15 +1123,15 @@
   "season": 3,
   "episode": 12,
   "title": "Jus in Bello",
-  "city": "Location unknown",
-  "state": null,
-  "lat": null,
-  "lng": null,
-  "locationType": "unknown",
-  "confidence": "unknown",
+  "city": "Monument",
+  "state": "CO",
+  "lat": 39.0917,
+  "lng": -104.8725,
+  "locationType": "real",
+  "confidence": "medium",
   "summary": "The brothers are arrested and held while an FBI agent from their past pursues them.",
   "image": null,
-  "note": "Only 'a sheriff's station' is mentioned, with no town or state."
+  "note": "Source: Supernatural Wiki location field; not confirmed on screen."
  },
  {
   "id": "s03e13",
@@ -1138,15 +1159,22 @@
   "season": 3,
   "episode": 14,
   "title": "Long-Distance Call",
-  "city": "Location unknown",
-  "state": null,
-  "lat": null,
-  "lng": null,
-  "locationType": "unknown",
-  "confidence": "unknown",
+  "city": "Milan",
+  "state": "OH",
+  "lat": 41.2973,
+  "lng": -82.6016,
+  "locationType": "real",
+  "confidence": "medium",
   "summary": "Phone calls that seem to come from dead loved ones push people toward suicide.",
-  "image": null,
-  "note": "No place is named in the sources checked."
+  "image": {
+   "src": "img/s03e14.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Milan_Ohio_public_square.jpg",
+   "author": "Chris Light (talk)",
+   "license": "CC BY-SA 3.0",
+   "title": "Milan Ohio public square.jpg",
+   "illustrative": false
+  },
+  "note": "Source: Supernatural Wiki location field; not confirmed on screen."
  },
  {
   "id": "s03e15",
@@ -1203,7 +1231,7 @@
   "confidence": "unknown",
   "summary": "Dean returns from Hell, and the brothers investigate who or what pulled him out.",
   "image": null,
-  "note": "Only an unnamed gas station is mentioned. No place is named in the sources checked."
+  "note": "The wiki says Dean is buried in Pontiac, Illinois, but gives no town for the gas station scenes. Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s04e02",
@@ -1218,7 +1246,7 @@
   "confidence": "unknown",
   "summary": "Dean and Sam look into omens and deaths while Dean searches for answers about his rescue.",
   "image": null,
-  "note": "No place is named in the sources checked."
+  "note": "The wiki lists only Sioux Falls, South Dakota; unclear whether the case happens there. Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s04e03",
@@ -1319,7 +1347,7 @@
   "confidence": "unknown",
   "summary": "The brothers investigate Halloween-season deaths in a small town.",
   "image": null,
-  "note": "The sources only say 'a small town'."
+  "note": "The wiki lists the location as unknown. Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s04e08",
@@ -1355,7 +1383,7 @@
   "confidence": "unknown",
   "summary": "The brothers face a threat tied to a former hunter who is pursuing them.",
   "image": null,
-  "note": "No place is named in the sources checked."
+  "note": "The wiki lists only the state, Ohio. Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s04e10",
@@ -1370,7 +1398,7 @@
   "confidence": "unknown",
   "summary": "The brothers deal with angels and demons while looking for answers about Dean's captors.",
   "image": null,
-  "note": "No place is named in the sources checked."
+  "note": "The wiki lists Sioux Falls, South Dakota, and Union, Kentucky; the roles of each are unclear. Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s04e11",
@@ -1412,15 +1440,22 @@
   "season": 4,
   "episode": 13,
   "title": "After School Special",
-  "city": "Location unknown",
-  "state": null,
-  "lat": null,
-  "lng": null,
-  "locationType": "unknown",
-  "confidence": "unknown",
+  "city": "Fairfax",
+  "state": "IN",
+  "lat": 39.8,
+  "lng": -86.2,
+  "locationType": "approximate",
+  "confidence": "medium",
   "summary": "The brothers investigate a case in a school, with a link to Sam's past.",
-  "image": null,
-  "note": "No place is named in the sources checked."
+  "image": {
+   "src": "img/s04e13.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Small_town_USA_-rivertown_-Aurora_-Indiana_-stmaryscatholicchurch_-enjoythesmallthings_-CuzIwasborninasmalltown.jpg",
+   "author": "Shari",
+   "license": "CC BY 2.0",
+   "title": "Small town USA -rivertown -Aurora -Indiana -stmaryscatholicchurch -enjoythesmallthings -CuzIwasborninasmalltown.jpg",
+   "illustrative": true
+  },
+  "note": "The town is probably fictional; the point shown is approximate. Source: Supernatural Wiki location field; not confirmed on screen."
  },
  {
   "id": "s04e14",
@@ -1498,22 +1533,29 @@
   "confidence": "unknown",
   "summary": "The brothers find themselves living ordinary corporate lives in an unfamiliar setting.",
   "image": null,
-  "note": "No place is named in the sources checked."
+  "note": "The wiki lists only the state, Ohio. Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s04e18",
   "season": 4,
   "episode": 18,
   "title": "The Monster at the End of This Book",
-  "city": "Location unknown",
-  "state": null,
-  "lat": null,
-  "lng": null,
-  "locationType": "unknown",
-  "confidence": "unknown",
+  "city": "Kripke's Hollow",
+  "state": "OH",
+  "lat": 40.4,
+  "lng": -82.8,
+  "locationType": "approximate",
+  "confidence": "medium",
   "summary": "The brothers discover a book series that chronicles their own lives.",
-  "image": null,
-  "note": "No place is named in the sources checked."
+  "image": {
+   "src": "img/s04e18.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Shaw_Farm_driveway_near_Ross.jpg",
+   "author": "Nyttend",
+   "license": "Public domain",
+   "title": "Shaw Farm driveway near Ross.jpg",
+   "illustrative": true
+  },
+  "note": "The town is fictional; the point shown is approximate. Source: Supernatural Wiki location field; not confirmed on screen."
  },
  {
   "id": "s04e19",
@@ -1541,15 +1583,22 @@
   "season": 4,
   "episode": 20,
   "title": "The Rapture",
-  "city": "Location unknown",
-  "state": null,
-  "lat": null,
-  "lng": null,
-  "locationType": "unknown",
-  "confidence": "unknown",
+  "city": "Pontiac",
+  "state": "IL",
+  "lat": 40.8809,
+  "lng": -88.6298,
+  "locationType": "real",
+  "confidence": "medium",
   "summary": "A possessed vessel and an angelic mission put Dean and Castiel at odds.",
-  "image": null,
-  "note": "No place is named in the sources checked."
+  "image": {
+   "src": "img/s04e20.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Pontiac_IL_Livingston_County_Courthouse5.JPG",
+   "author": "IvoShandor",
+   "license": "CC BY-SA 3.0",
+   "title": "Pontiac IL Livingston County Courthouse5.JPG",
+   "illustrative": false
+  },
+  "note": "Source: Supernatural Wiki location field; not confirmed on screen."
  },
  {
   "id": "s04e21",
@@ -1564,21 +1613,28 @@
   "confidence": "unknown",
   "summary": "The brothers part ways while the demon war nears a climax.",
   "image": null,
-  "note": "No place is named in the sources checked."
+  "note": "The wiki lists Sioux Falls, South Dakota, and several Minnesota and North Dakota places; the main setting is unclear. Source: Supernatural Wiki, not confirmed on screen."
  },
  {
   "id": "s04e22",
   "season": 4,
   "episode": 22,
   "title": "Lucifer Rising",
-  "city": "Location unknown",
-  "state": null,
-  "lat": null,
-  "lng": null,
-  "locationType": "unknown",
-  "confidence": "unknown",
+  "city": "Ilchester",
+  "state": "MD",
+  "lat": 39.2154,
+  "lng": -76.7725,
+  "locationType": "real",
+  "confidence": "medium",
   "summary": "A final confrontation decides whether a seal is broken and what is unleashed.",
-  "image": null,
-  "note": "No place is named in the sources checked."
+  "image": {
+   "src": "img/s04e22.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Landing_Road_and_Ilchester_Road.jpg",
+   "author": "Scott218",
+   "license": "CC BY-SA 4.0",
+   "title": "Landing Road and Ilchester Road.jpg",
+   "illustrative": false
+  },
+  "note": "The climax takes place at a convent there. Source: Supernatural Wiki location field; not confirmed on screen."
  }
 ]
